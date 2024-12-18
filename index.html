@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Commerce Demo</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+<header class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Tokoko</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">Products</a></li>
+                <li><a href="#" class="hover:underline">About</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container mx-auto py-10">
+    <!-- Product Listing -->
+    <section class="bg-white shadow rounded p-6 mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Our Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="border border-gray-300 rounded p-4 text-center">
+                <h3 class="text-lg font-semibold mb-2">Product 1</h3>
+                <p class="text-gray-700">Description of product 1</p>
+                <p class="text-blue-600 font-bold mt-2">$10.00</p>
+            </div>
+            <div class="border border-gray-300 rounded p-4 text-center">
+                <h3 class="text-lg font-semibold mb-2">Product 2</h3>
+                <p class="text-gray-700">Description of product 2</p>
+                <p class="text-blue-600 font-bold mt-2">$20.00</p>
+            </div>
+            <div class="border border-gray-300 rounded p-4 text-center">
+                <h3 class="text-lg font-semibold mb-2">Product 3</h3>
+                <p class="text-gray-700">Description of product 3</p>
+                <p class="text-blue-600 font-bold mt-2">$30.00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-white shadow rounded p-6 mb-8">
+        <h2 class="text-2xl font-semibold mb-4">About Us</h2>
+        <p class="text-gray-700">We are an e-commerce platform providing high-quality products for our customers. Explore our wide range of offerings and enjoy a seamless shopping experience.</p>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="bg-white shadow rounded p-6">
+        <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
+        <form class="grid grid-cols-1 gap-4">
+            <div>
+                <label for="name" class="block text-gray-700 font-medium">Name</label>
+                <input type="text" id="name" placeholder="Your Name" class="w-full mt-2 border border-gray-300 rounded p-2">
+            </div>
+
+            <div>
+                <label for="email" class="block text-gray-700 font-medium">Email</label>
+                <input type="email" id="email" placeholder="Your Email" class="w-full mt-2 border border-gray-300 rounded p-2">
+            </div>
+
+            <div>
+                <label for="message" class="block text-gray-700 font-medium">Message</label>
+                <textarea id="message" placeholder="Your Message" class="w-full mt-2 border border-gray-300 rounded p-2"></textarea>
+            </div>
+
+            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+        <p class="text-sm">&copy; 2024 E-Commerce Demo. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
